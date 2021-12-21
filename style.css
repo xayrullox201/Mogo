@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fon1: linear-gradient( #f38181ea,#fce38aea );
+}
+
+@font-face {
+    font-family: 'kaushan';
+    src: url(../fonts/kaushanscript-regular.ttf);
+}
+@font-face {
+    font-family: 'truenobd';
+    src: url(../fonts/truenobd.otf);
+}
+header{
+    width: 100%;
+    background: var(--fon1), url(../page/img/kalxat.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
+}
+.conteiner{
+    width: 80%;
+    margin: 0 auto;
+}
+nav,.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li{
+    list-style: none;
+    padding: 10px 20px;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.menu li a:hover{
+    color: #fce38a;
+    border-bottom: 3px solid #fce38a;
+    padding-bottom: 5px;
+}
+.menu ,.logo  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px; 
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+.blog{
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+}   
+.blog .header_title{
+    font-family:'kaushan';
+    font-size: 74px;
+    color: white;
+    font-weight: 100;
+}
+.blog .header_text{
+    font-size: 130px;
+    font-weight: 600;
+    color:white;
+    font-family: 'truenobd';
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.blog .header_text::after{
+    content: '';
+    width: 55px;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    margin: 40px auto 60px auto;
+    display: block;
+}
+.btn{
+width: 100px;
+height: 20px;
+background: none;
+border: 2px solid white;
+padding: 5px 35px ;
+text-decoration: none;
+color: white;
+font-family: 'truenobd';
+font-size: 18px;
+}
+.blog_footer{
+    width: 100%;
+    height: 65px;
+    margin: 180px auto 0px auto;
+}
+.blog_footer p{
+    margin: 20px 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+.footer_line_box1{
+    width: 22.8%;
+    display: inline-block;
+    height: 3px;
+    background-color: white;
+    margin:10px;
+}
+.footer_line_box{
+    width: 22.8%;
+    display: inline-block;
+    height: 3px;
+    background-color: white;
+    margin:10px;
+}
+.footer_line_box1::before{
+    content: '';
+    width: 70px;
+    height: 3px;
+    display: block;
+    background-color: #f38181;
+}
+
+
+.stage2{
+    width: 100%;
+    margin: 40px auto;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title::after{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #f38181 ;
+    display: block;
+    margin: 35px auto
+}
+.stage2_title{
+    font-family: 'kaushan';
+    font-size: 22px;
+    font-weight: 200;
+}
+.stage2_text{
+    font-family: 'truenobd';
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.stage2_text2{
+    text-align: center;
+    margin: 20px auto;
+    color: gray;
+}
+.sge2_box{
+    width: 31%;
+    height: 250px;
+    background-image:url(../page/img/mac_kampyutr.png);
+    background-repeat: no-repeat;
+    float: left;
+    margin: 50px 10px;
+}
+.sge2_box:hover{
+    background:var(--fon1),url(../page/img/mac_kampyutr.png) ;
+    box-shadow: 10px 10px 0px #95e1d3;
+    margin: 40px 15px;
+    transition: linear .1s;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.text:hover{
+    opacity: 1;
+}
+.sge2_box i{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 140px;
+}
+
+.sge_text3{
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    font-size: 27px;
+}
+.sge2_box1{
+    width: 31%;
+    height: 250px;
+    background-image: url(../page/img/naushni.png);
+    margin: 50px 10px;
+    float: left;
+    transition: linear .1s;
+}
+.sge2_box1 i{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 140px;
+}
+.sge2_box1:hover{
+    background:var(--fon1),url(../page/img/naushni.png) ;
+    box-shadow: 10px 10px 0px #95e1d3;
+    margin: 40px 15px;
+}
+.sge2_box2{
+    width: 31%;
+    height: 250px;
+    background-image:url(../page/img/archa_tuvak.png);
+    background-repeat: no-repeat;
+    margin: 50px 10px;
+    float: left;
+}.sge2_box2 i{
+    color: white;
+    position: relative;
+    top: 70px;
+    left: 140px;
+}
+.sge2_box2:hover{
+    background:var(--fon1),url(../page/img/archa_tuvak.png) ;
+    box-shadow: 10px 10px 0px #95e1d3;
+    margin: 40px 15px; 
+    transition: linear .1s;
+}
+
+.clear{
+    clear: both;
+}
+.sn{
+    width: 100%;
+    height: 220px;
+    background-color: #95e1d3;     
+    
+}
+.number1_box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.number_box{
+    width: calc(100% / 5 );
+    height: 220px;
+    text-align: center;
+    padding-top: 60px;
+    border-left: 1px solid #b5eae0;
+    border-right: 1px solid #b5eae0;
+}
+.number_box h1{
+    font-size: 60px;
+    color: white;
+}
+.number_box p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+}
+.son1{
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 40px; 
+    background-color: white;
+}
+.son1_contain{
+    width: 100%;
+    height: 300px;
+}
+.son1_box{
+    width: calc(100% / 3 - 28px);
+    height: 80px;
+    float: left;
+    margin: 60px 14px;
+}
+.son1_box .clock_i{
+    height: 75px;
+    float: left;
+    padding: 0px 20px 30px;
+}
+.son1_box .h3_son1{
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.son1_box .p_son1{
+    color: grey;
+    
+}
+.blog1{
+    width: 100%;
+    height: 800px;
+    background: linear-gradient(#ffffffd8, #ffffffbe), url(../page/img/kolmak1.png);
+    background-size: cover;
+    padding-top: 55px ;
+}
+.blog1_box{
+    width: 40%;
+    height: 600px;
+    background-image: url(../page/img/kotta_ayfon.png);
+    background-size: cover;
+    margin-left: 350px;
+}
+.blog1_box img{
+    position: relative;
+    top: 190px;
+    left: 390px;
+}
